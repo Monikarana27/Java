@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Calculate_sum {
+    public
+    void calculate_sum() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a+b;
+        System.out.println("sum is " +sum);
+
+
+
+
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Calculate_sum ob = new Calculate_sum();
+        ob.calculate_sum();
+    
+         }
+
+}
