@@ -1,0 +1,12 @@
+class Hell {
+    public void run() {
+        System.out.println("hello");
+    }
+}
+
+public class hello {
+    public static void main(String[] args) {
+        Hell ob = new Hell();
+        ob.run();
+    }
+}
