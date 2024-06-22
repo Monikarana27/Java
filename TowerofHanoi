@@ -1,0 +1,17 @@
+public class TowerofHanoi {
+    public static void solveTowerofHanoi(int n, int from_peg, int to_peg, int aux_peg) {
+        if (n == 1) {
+            System.out.println("Move disk 1 from peg " + from_peg + " to peg " + to_peg);
+            return;
+        }
+        
+        solveTowerofHanoi(n - 1, from_peg, aux_peg, to_peg);
+        System.out.println("Move disk " + n + " from peg " + from_peg + " to peg " + to_peg);
+        solveTowerofHanoi(n - 1, aux_peg, to_peg, from_peg);
+    }
+
+    public static void main(String[] args) {
+        int n = 3; // Number of disks
+        solveTowerofHanoi(n, 1, 3, 2); // Move disks from peg 1 to peg 3 using peg 2 as auxiliary
+    }
+}
